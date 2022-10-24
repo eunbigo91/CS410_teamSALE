@@ -1,3 +1,12 @@
-# CourseProject
+# CS410 Text Information Systems
 
-Please fork this repository and paste the github link of your fork on Microsoft CMT. Detailed instructions are on Coursera under Week 1: Course Project Overview/Week 9 Activities.
+**Group Project_ Team SALE**
+
+**Team SALE**<br>
+● Eunbi Go - eunbigo2 (Team captain) <br>
+● Akarsh Bhagavath - akarshb2 <br>
+● Lingfei Yang - lyang26 <br>
+● Sruthi Jayanti - sjayan3 <br>
+
+**Brief description** <br>
+Creating an Chrome extension to perform sentiment analysis on book review and recommend books 
