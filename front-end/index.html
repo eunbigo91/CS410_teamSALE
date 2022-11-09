@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Input -->
+    <h1> Extension Name </h1>
+    <p> Do we need a description? </p>
+
+    <br>
+    <input type="text" id="fname" name="fname">
+    <button id="searchButton"> Search </button>
+    <br>
+
+    <!-- Output -->
+    <template>
+      <li>
+          <h3 class="result"> Book Name </h3>
+          <p class="analysis"> Sentiment analysis </p>
+      </li>
+    </template>
+
+    <template id="reco">
+      <li>
+        <a> <!-- Not sure if we have url -->
+          <h3 class="reco1"> Book Name </h3>
+        </a>
+      </li>
+    </template>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
