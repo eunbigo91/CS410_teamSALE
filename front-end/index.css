@@ -1,0 +1,13 @@
+input {
+    min-width: 250px;
+
+}
+
+input::placeholder {
+    font: 11px/3 sans-serif;
+}
+
+body {
+    min-width:250px;
+    min-height:200px;
+}
