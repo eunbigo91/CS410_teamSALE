@@ -1,7 +1,9 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="front-end/index.css" />
+    <script src="3rd-party/jquery/jquery-1.12.4.js"></script>
+    <script src="3rd-party/CSVToTable/js/jquery.csvToTable.js"></script>
   </head>
   <body>
       <!-- Input -->
@@ -12,24 +14,10 @@
     <input style="margin-bottom:0.15cm" type="text" id="inputText" name="inputText" placeholder="e.g. Green Eggs and Ham"> <br>
     <button id="searchButton"> Search </button>
 
-    
+    <div id="result"> </div>
 
-    <!-- Output -->
-    <template id="result">
-      <li>
-          <h3 class="result"> Book Name </h3>
-          <p class="analysis"> Sentiment analysis </p>
-      </li>
-    </template>
+    <div id="reco"> </div>
 
-    <template id="reco">
-      <li>
-        <a> <!-- Not sure if we have url -->
-          <h3 class="reco"> Book Name </h3>
-        </a>
-      </li>
-    </template>
-
-    <script src="popup.js"></script>
+    <script src="front-end/script.js"></script>
   </body>
 </html>
