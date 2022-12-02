@@ -4,7 +4,7 @@ $('#inputText').change(function () {
   });
   
 function search_func(query) {
-    $('#result').CSVToTable('back-end/output/sentiment_output.csv',{
+    $('#result').CSVToTable('Extension/back-end/output/sentiment_output.csv',{
         tableClass: "result_table",
         thClass: "table_header",
         trClass: "table_row",
