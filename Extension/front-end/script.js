@@ -2,7 +2,6 @@ $('#inputText').change(function () {
     $('#result').empty();
     search_func($('#inputText').val());
   });
-  
 
 function search_func(query) {
     $.getJSON("back-end/output/final_mapping.json", function(json) {
