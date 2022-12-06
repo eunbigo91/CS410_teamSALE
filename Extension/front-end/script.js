@@ -1,6 +1,7 @@
 $('#inputText').change(function () {
     $('#result').empty();
     search_func($('#inputText').val());
+    $("#inputText").val("");
   });
 
 function search_func(query) {
