@@ -55,7 +55,7 @@ function search_func(query) {
                   final = "No results were found for that title";
                 }
 
-                $('#result').html(results);
+                $('#result').html(final);
               }
             });
          }
