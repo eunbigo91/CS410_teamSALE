@@ -19,10 +19,13 @@ function search_func(query) {
             // push title to results array
               results.push(json[i]["title"]);
               results.push(json[i]["label"]);
+              // push recommendation book info
+              results.push(json[i]["book"]);
          }
       }
 
       var final = "";
+      var recommend = "";
       // building the final output string
       if (results.length > 0) {
         var sentiment_string = "";
@@ -37,10 +40,12 @@ function search_func(query) {
         }
 
         final = "Based on many reader's reviews, the overall sentiment around the novel " + results[0].bold() + " is " + sentiment_string.bold() + ".";
+        recommend = "You may also be interested in";
       } else {
-        final = "No results were found for that title.";
+        final = "No results were found for " + query.bold() + ".";
       }
-
-     $('#result').html(final);
+      
+      $('#result').html(final);
+      $('#recommendation').html(recommend);
   });
 }
