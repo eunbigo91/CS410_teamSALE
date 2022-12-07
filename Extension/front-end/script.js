@@ -5,7 +5,7 @@ $('#inputText').change(function () {
   });
 
 function search_func(query) {
-    $.getJSON("back-end/output/final_mapping.json", function(json) {
+    $.getJSON("back-end/output/final_mapping_recommendation.json", function(json) {
       // process query to all lower 
       var results = [];
       var searchVal = query.toLowerCase();
@@ -20,7 +20,7 @@ function search_func(query) {
               results.push(json[i]["title"]);
               results.push(json[i]["label"]);
               // push recommendation book info
-              results.push(json[i]["book"]);
+              results.push(json[i]["recommendations5"]);
          }
       }
 
@@ -32,15 +32,16 @@ function search_func(query) {
 
         if (results[1] == "pos") {
         sentiment_string = "positive";
-
         } else if (results[1] == "neg") {
         sentiment_string = "negative";
         } else {
         sentiment_string = "neutral";
         }
 
+        var recommend_book = results[2].split(';');
+
         final = "Based on many reader's reviews, the overall sentiment around the novel " + results[0].bold() + " is " + sentiment_string.bold() + ".";
-        recommend = "You may also be interested in";
+        recommend = "You may also be interested in <br><ul style='padding-inline-start: 0.5cm;'><li>" + recommend_book[0].bold() + "</li><li>" + recommend_book[1].bold() + "</li><li>" + recommend_book[2].bold() + "</li><li>" + recommend_book[3].bold() + "</li><li>"+ recommend_book[4].bold() + "</li><ul>";
       } else {
         final = "No results were found for " + query.bold() + ".";
       }
