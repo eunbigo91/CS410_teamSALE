@@ -48,5 +48,6 @@ function search_func(query) {
       
       $('#result').html(final);
       $('#recommendation').html(recommend);
+      
   });
 }
